@@ -65,4 +65,9 @@ public class EmployeeController {
         employeeServiceImpl.deleteDataById(empId);
         return ResponseEntity.ok("Data Deleyted Successfully");
     }
+
+    @GetMapping("/hello")
+    public ResponseEntity<String> sayHello(){
+        return ResponseEntity.ok("WELCOME TO FINTECH CSI PUNE");
+    }
 }
