@@ -70,4 +70,9 @@ public class EmployeeController {
     public ResponseEntity<String> sayHello(){
         return ResponseEntity.ok("WELCOME TO FINTECH CSI PUNE");
     }
+    @GetMapping("/sayhello")
+    public ResponseEntity<String> garHello(){
+
+         return ResponseEntity.ok("WELCOME TO FINTECH CSI");
+    }
 }
